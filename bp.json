@@ -1,0 +1,71 @@
+{
+  "producer_account_name": "theteloscope",
+  "producer_public_key": "EOS5AUGHMZqpcSwTQY2fMDrUS38j2FmbiKbTQmXAoQbtuAC6JyZcq",
+  "org": {
+    "candidate_name": "The Teloscope",
+    "website": "https://theteloscope.io",
+    "ownership_disclosure": "https://medium.com/@theteloscope/why-telos-cope-fbbc8651d334",
+    "code_of_conduct": "",
+    "email": "contact@theteloscope.io",
+    "branding": {
+      "logo_256": "https://theteloscope.io/img/teloscope-logo-256.png",
+      "logo_1024": "https://theteloscope.io/img/teloscope-logo-1024.png",
+      "logo_svg": "https://theteloscope.io/img/teloscope-logo.svg"
+    },
+    "location": {
+      "name": "Asturias",
+      "country": "ES",
+      "latitude": "43.53",
+      "longitude": "-5.67"
+    },
+    "social": {
+      "steemit": "",
+      "twitter": "TheTeloscope",
+      "youtube": "theteloscope",
+      "facebook": "",
+      "github": "theteloscope",
+      "reddit": "theteloscope",
+      "keybase": "",
+      "telegram": "TheTeloscope",
+      "wechat": ""
+    }
+  },
+  "nodes": [
+    {
+      "location": {
+        "name": "TestnetAPI",
+        "country": "ES",
+        "latitude": "43.53",
+        "longitude": "-5.67"
+      },
+      "node_type": "full",
+      "p2p_endpoint": "",
+      "api_endpoint": "http://testnet.teloscope.io:18888",
+      "ssl_endpoint": ""
+    },
+    {
+      "location": {
+        "name": "TestnetP2P",
+        "country": "ES",
+        "latitude": "43.53",
+        "longitude": "-5.67"
+      },
+      "node_type": "seed",
+      "p2p_endpoint": "testnet.teloscope.io:19876",
+      "api_endpoint": "",
+      "ssl_endpoint": ""
+    },
+    {
+      "location": {
+        "name": "TestnetProducer",
+        "country": "ES",
+        "latitude": "43.53",
+        "longitude": "-5.67"
+      },
+      "node_type": "producer",
+      "p2p_endpoint": "",
+      "api_endpoint": "",
+      "ssl_endpoint": ""
+    }
+  ]
+}
