@@ -73,15 +73,17 @@ The information in Spanish can be accessed at the following Web page: [https://w
 
 ### Owners
 
-- Eduardo Gómez de Tostón, owns a 100% equity stake in Alisys
+- Eduardo Gómez, owns a 100% equity stake in Alisys
 
 ### Officers
 
-- Eduardo Gómez de Tostón, CEO
+- Eduardo Gómez, CEO
+- José-Carlos Fernández, CTO
 
 ### Directors
 
-- Daniel Setó, Director of Innovation
-- Javier Martin Manzano, Director of Business Development
+- Pablo Pérez, Director of Engineering
+- Daniel Setó, Director of R&Dn
+- Ángel Barrio, Sales Director
 
 
