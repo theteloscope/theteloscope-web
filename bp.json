@@ -4,8 +4,8 @@
   "org": {
     "candidate_name": "The Teloscope",
     "website": "https://theteloscope.io",
-    "ownership_disclosure": "https://medium.com/@theteloscope/why-telos-cope-fbbc8651d334",
-    "code_of_conduct": "",
+    "ownership_disclosure": "https://github.com/theteloscope/theteloscope-web/tree/master/transparency/ownershipdisclosure",
+    "code_of_conduct": "https://github.com/theteloscope/theteloscope-web/tree/master/transparency/codeofconduct",
     "email": "contact@theteloscope.io",
     "branding": {
       "logo_256": "https://theteloscope.io/img/teloscope-logo-256.png",
