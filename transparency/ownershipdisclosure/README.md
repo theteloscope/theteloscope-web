@@ -4,6 +4,8 @@ Below is the ownership structure of The Teloscope. This was published on Nov 28,
 
 The Teloscope Block Producer is a joint initiative by CTIC Centro Tecnológico not-for-profit private foundation and Alisys as part of a wider agreement, concerned with exploring the real-world applications of newest blockchain technologies.
 
+Initiative's total participation is distributed: 70% CTIC, 30% Alisys.
+
 ## CTIC Centro Tecnológico
 
 *Charities and nonprofit organizations are not required to provide beneficial owner information because they do not have ownership interests. However, CTIC provides the details of those who have “control by any other means” and those who are the senior managing officials.
