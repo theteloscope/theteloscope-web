@@ -41,7 +41,7 @@
       },
       "node_type": "full",
       "p2p_endpoint": "",
-      "api_endpoint": "https://api.theteloscope.io",
+      "api_endpoint": "http://testnet.theteloscope.io:18888",
       "ssl_endpoint": ""
     },
     {
@@ -52,7 +52,7 @@
         "longitude": "-5.67"
       },
       "node_type": "seed",
-      "p2p_endpoint": "p2p.theteloscope.io:9876",
+      "p2p_endpoint": "testnet.theteloscope.io:19876",
       "api_endpoint": "",
       "ssl_endpoint": ""
     },
