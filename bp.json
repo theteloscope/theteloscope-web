@@ -6,7 +6,8 @@
     "website": "https://theteloscope.io",
     "ownership_disclosure": "https://github.com/theteloscope/theteloscope-web/tree/master/transparency/ownershipdisclosure",
     "code_of_conduct": "https://github.com/theteloscope/theteloscope-web/tree/master/transparency/codeofconduct",
-    "email": "contact@theteloscope.io",
+    "email": "support@theteloscope.io",
+    "phone":"TF Registry",
     "branding": {
       "logo_256": "https://theteloscope.io/img/teloscope-logo-256.png",
       "logo_1024": "https://theteloscope.io/img/teloscope-logo-1024.png",
@@ -40,7 +41,7 @@
       },
       "node_type": "full",
       "p2p_endpoint": "",
-      "api_endpoint": "http://testnet.teloscope.io:18888",
+      "api_endpoint": "http://testnet.theteloscope.io:18888",
       "ssl_endpoint": ""
     },
     {
@@ -51,7 +52,7 @@
         "longitude": "-5.67"
       },
       "node_type": "seed",
-      "p2p_endpoint": "testnet.teloscope.io:19876",
+      "p2p_endpoint": "testnet.theteloscope.io:19876",
       "api_endpoint": "",
       "ssl_endpoint": ""
     },
