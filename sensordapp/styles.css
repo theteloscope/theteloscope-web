@@ -1,0 +1,79 @@
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+.nv-axis text{
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 66;
+}
+.nv-legend text{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+  /**/
+
+  .navbar-custom {
+    background-color: #563D7C;
+    background-color: #E4E0EB;
+    padding: 20px 0;
+  }
+
+  .navbar-custom h1 {
+      margin: 0;
+  }
+
+  #logo-sensordapp{
+      width: 130px;
+  }
+
+  .jumbotron {
+      background-color: #f6f6f6 !important;
+      padding: 2rem 2rem 0.2rem !important;
+  }
+
+  #description {
+      margin-top: 30px;
+  }
+
+  @media (min-width: 1600px) { 
+    .container {
+       max-width: 1540px !important; 
+    }
+   }
+
+   @media (min-width: 1920px) { 
+    .container {
+       max-width: 1860px !important; 
+    }
+   }   
+
+   @media (min-width: 2560px) { 
+    .container {
+       max-width: 2500px !important; 
+    }
+   }   
+
+   #refresh_historical_btn img {
+       max-width: 20px;
+   }
+
+   fieldset {
+       margin-top: 1.5rem;
+   }
+
+   legend {
+       font-size: 1.1rem;
+   }
+
+   label {
+       font-weight: bold;
+   }
+      
+   #chart-config-params label {
+    margin: 0 10px
+   }
