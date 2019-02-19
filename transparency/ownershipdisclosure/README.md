@@ -2,9 +2,9 @@
 
 Below is the ownership structure of The Teloscope. This was published on Nov 28, 2018.
 
-The Teloscope Block Producer is a joint initiative by CTIC Centro Tecnológico not-for-profit private foundation and Alisys as part of a wider agreement, concerned with exploring the real-world applications of newest blockchain technologies.
+The Teloscope Block Producer is an initiative by CTIC Centro Tecnológico not-for-profit private foundation, concerned with exploring the real-world applications of newest blockchain technologies.
 
-Initiative's total participation is distributed: 70% CTIC, 30% Alisys.
+Initiative's total participation is distributed: 100% CTIC.
 
 ## CTIC Centro Tecnológico
 
@@ -62,30 +62,5 @@ The information in Spanish can be accessed at the following Web page: [https://w
 - Code of Ethics Policy (in Spanish) [https://www.fundacionctic.org/sites/default/files/CodigoEticoConductaCTIC.pdf](https://www.fundacionctic.org/sites/default/files/CodigoEticoConductaCTIC.pdf)
 - Code of Good Governance Policy (in Spanish) [https://www.fundacionctic.org/sites/default/files/CodigoBuenGobiernoCTIC.pdf](https://www.fundacionctic.org/sites/default/files/CodigoBuenGobiernoCTIC.pdf)
 
-## Alisys
-
-*The information in Spanish can be accessed at the following Web page: [https://www.alisys.net/es/politicas](https://www.alisys.net/es/politicas)*
-
-### Identifying information
-
-- Legal Name: Alisys Digital S.L.U.
-- Telephone Number: 0034 910 200 000
-- Physical Address: Lexington Building, 85 Orense, Madrid 28020, Spain
-- Official Website: www.alisys.net
-
-### Owners
-
-- Eduardo Gómez, owns a 100% equity stake in Alisys
-
-### Officers
-
-- Eduardo Gómez, CEO
-- José-Carlos Fernández, CTO
-
-### Directors
-
-- Pablo Pérez, Director of Engineering
-- Daniel Setó, Director of R&Dn
-- Ángel Barrio, Sales Director
 
 

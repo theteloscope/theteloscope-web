@@ -2,7 +2,7 @@
 
 Below is the code of conduct of The Teloscope. This was published on Nov 28, 2018.
 
-The Teloscope Block Producer (BP) is a joint initiative by CTIC Centro Tecnológico not-for-profit private foundation and Alisys as part of a wider agreement, concerned with exploring the real-world applications of newest blockchain technologies. You can know more about both organizations in our Ownership Disclosure.
+The Teloscope Block Producer (BP) is an initiative by CTIC Centro Tecnológico not-for-profit private foundation, concerned with exploring the real-world applications of newest blockchain technologies. You can know more about CTIC in our Ownership Disclosure.
 
 We pledge to follow all of the good practices expected from a Telos BP, such as transaction processing neutrality, acting in the best interest of the network and availability for public accountability. And as one of Telos founding stones is to design a system of governance free of corrupting elements, we believe in several key aspects that we consider essential:
 
