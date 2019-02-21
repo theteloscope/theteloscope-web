@@ -15,6 +15,8 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
   <title>The Teloscope</title>
 
+  <!-- Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -29,25 +31,7 @@
   <link href="css/styles.css" rel="stylesheet">
 
   <style type="text/css">
-    .medium-link {
-      color: #000 !important;
-      text-decoration: none;
-      display: block;
-    }
 
-    .medium-link:hover,
-    .medium-link:focus {
-      background-color: #f0f0f0 !important;
-      text-decoration: none;
-    }
-
-    .medium-article {
-      padding: 30px 0 30px;
-    }
-
-    .modal-content .medium-article p {
-      margin: 0;
-    }
   </style>
 
 </head>
@@ -67,6 +51,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#featured">Featured</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#portfolio">Instruments</a>
           </li>
@@ -91,12 +78,99 @@
       <div class="intro-text" style="position: absolute;width: 100%;z-index: 10;padding:0;top:35%">
         <div class="intro-heading text-uppercase">The Teloscope</div>
         <div class="intro-lead-in">The Non-Profit BP</div>
-        <a class="btn btn-primary btn-xl text-uppercase" data-toggle="modal" href="#portfolioModal0">Your Tlos Matter</a>&nbsp;&nbsp;
-        <a class="btn btn-success btn-xl text-uppercase" href="https://medium.com/@theteloscope/the-teloscope-telegram-bot-a-guide-for-beginners-2c96340a6dd">Try
-          Our TELOS Bot</a>
+        <p><strong>Try our tools...</strong></p>
+        <a class="btn btn-success btn-xl text-uppercase" href="https://medium.com/@theteloscope/the-teloscope-telegram-bot-a-guide-for-beginners-2c96340a6dd">Telegram
+          Bot</a>
+        <a class="btn btn-primary btn-xl text-uppercase" href="https://chainspector.io">Chainspector</a>&nbsp;&nbsp;
       </div>
     </div>
   </header>
+
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light" id="featured">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Featured</h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 d-flex align-items-stretch">
+          <a class="medium-link" href="https://medium.com/@theteloscope/the-teloscope-weekly-743e4a03e391">
+            <section class="medium-article">
+              <figure>
+                <img alt="" src="https://miro.medium.com/fit/c/512/154/0*5iA4bsys3EFBu9Sx" width="400" height="120">
+              </figure>
+              <h3>The Teloscope Weekly</h3>
+              <p>Weekly reports that encompass the daily from The Teloscope Non-Profit BP</p>
+            </section>
+          </a>
+        </div>
+        <div class="col-xl-6 d-flex align-items-stretch">
+          <a class="medium-link" href="https://medium.com/@theteloscope/15-things-weve-done-in-two-months-fb41accb08ff">
+            <section class="medium-article">
+              <figure>
+                <img alt="" src="https://miro.medium.com/fit/c/1400/420/1*bt2RIWtoemhNptjZG5Grpw.jpeg" width="400"
+                  height="120">
+              </figure>
+              <h3>15 Things We’ve Done in Two Months</h3>
+              <p>Network validation, 2 Telegram bots, chainspector utility app, dapp…</p>
+            </section>
+          </a>
+        </div>
+        <div class="col-xl-6 d-flex align-items-stretch">
+          <a class="medium-link" href="https://medium.com/@theteloscope/the-teloscope-telegram-bot-a-guide-for-beginners-2c96340a6dd">
+            <section class="medium-article">
+              <figure>
+                <img alt="" src="https://miro.medium.com/fit/c/900/270/0*Xwk9ELtJGHvhDXEP" width="400" height="120">
+              </figure>
+              <h3>The Teloscope Telegram Bot: A Guide for Beginners</h3>
+              <p>What is The Teloscope Bot?</p>
+            </section>
+          </a>
+        </div>
+        <div class="col-xl-6 d-flex align-items-stretch">
+          <a class="medium-link" href="https://medium.com/@theteloscope/get-a-free-telos-account-in-seconds-through-the-teloscope-bot-c9ae5a40915e">
+            <section class="medium-article">
+              <figure>
+                <img alt="" src="https://miro.medium.com/fit/c/1000/300/1*S6ccBzPIaP5UX7iZg9sp1w.png" width="400"
+                  height="120">
+              </figure>
+              <h3>Get a Free Telos Account in Seconds through The Teloscope Bot</h3>
+              <p>To create your free account just pick a…</p>
+            </section>
+          </a>
+        </div>
+        <div class="col-xl-6 d-flex align-items-stretch">
+          <a class="medium-link" href="https://medium.com/@theteloscope/getting-started-with-chainspector-336cfaa4358d">
+            <section class="medium-article">
+              <figure>
+                <img alt="" src="https://miro.medium.com/fit/c/1280/384/1*OWH8n5WawErdmiMtzdK4XA.png" width="400"
+                  height="120">
+              </figure>
+              <h3>Getting Started with Chainspector</h3>
+              <p>The Swiss Army knife of Telos</p>
+            </section>
+          </a>
+        </div>
+        <div class="col-xl-6 d-flex align-items-stretch">
+          <a class="medium-link" href="https://medium.com/@theteloscope/the-sensordapp-tutorial-687a6bd76a09">
+            <section class="medium-article">
+              <figure>
+                <img alt="" src="https://miro.medium.com/fit/c/800/240/1*cCeeIosoBM9UI5AyArOkJQ.png" width="400" height="120">
+              </figure>
+              <h3>The SensorDApp Tutorial</h3>
+              <p>The Teloscope team believes in the importance of producing DApps’ development tutorials in order
+                to spur coding…</p>
+            </section>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p style="font-weight: bold; text-align: center"><a href="https://medium.com/@theteloscope">The Teloscope on Medium</a></p>
+  </section>
 
   <!-- Portfolio Grid -->
   <section class="bg-light" id="portfolio">
@@ -108,7 +182,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="col-md-6 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -122,32 +196,18 @@
             <p class="text-muted">High-efficiency Block Producer System</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
+        <div class="col-md-6 col-sm-6 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/articles/thumbnail.png" alt="" style="border:1px solid #999;">
+            <img class="img-fluid" src="img/projects/thumbnail.png" alt="" style="border:1px solid #999;">
           </a>
           <div class="portfolio-caption">
-            <h4>Observing Logs</h4>
-            <p class="text-muted">Discover and Learn about Telos</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/videos/thumbnail.png" alt="" style="border:1px solid #999;">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Camera</h4>
-            <p class="text-muted">Watch our Short Videos</p>
+            <h4>Tools & Projects</h4>
+            <p class="text-muted">Discover Our Work</p>
           </div>
         </div>
       </div>
@@ -160,17 +220,17 @@
       <div class="row">
         <div class="col-lg-10 mx-auto text-center">
           <h2 class="section-heading text-uppercase">About</h2>
-          <p>The Teloscope Block Producer is a joint initiative by a group of Telos enthusiasts and blockchain
-            professionals from CTIC Centro Tecnológico non-profit foundation and our infrastructure partner Alisys.</p>
+          <p>The Teloscope Block Producer is an initiative by CTIC Centro Tecnológico not-for-profit private
+            foundation, concerned with exploring the real-world applications of newest blockchain technologies.</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/lu-badge.png" alt="">
             <h4>Luis Meijueiro</h4>
-            <p class="text-muted">Solutions Architect</p>
+            <p class="text-muted">Solutions & Community Builder</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="https://www.xing.com/profile/Luis_Meijueiro">
@@ -180,35 +240,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-sm-3">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/an-badge.png" alt="">
-            <h4>Andrés Berdasco</h4>
-            <p class="text-muted">DApp Developer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/andr%C3%A9s-berdasco-blanco-071a1891/">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/al-badge.png" alt="">
-            <h4>Alvaro Arias</h4>
-            <p class="text-muted">SC and IoT Developer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/%C3%A1lvaro-arias-fern%C3%A1ndez-042839b7/">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/hal-badge.jpg" alt="">
             <h4>Raúl HALonso</h4>
@@ -222,13 +254,39 @@
             </ul>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/an-badge.png" alt="">
+            <h4>Andrés Berdasco</h4>
+            <p class="text-muted">DApp Developer</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/andr%C3%A9s-berdasco-blanco-071a1891/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/al-badge.png" alt="">
+            <h4>Alvaro Arias</h4>
+            <p class="text-muted">SC and IoT Developer</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/%C3%A1lvaro-arias-fern%C3%A1ndez-042839b7/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/em-badge.png" alt="">
             <h4>Emilio Tereñes</h4>
-            <p class="text-muted">Community Builder</p>
+            <p class="text-muted">Data Scientist</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
                 <a href="https://www.linkedin.com/in/emilio-tere%C3%B1es-castelao-009116172/">
@@ -238,28 +296,14 @@
             </ul>
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/anto-badge.png" alt="">
-            <h4>Antonio Martín</h4>
-            <p class="text-muted">Infrastructure Manager</p>
+            <img class="mx-auto rounded-circle" src="img/team/ru-badge.png" alt="">
+            <h4>Rubén Luque</h4>
+            <p class="text-muted">Backend Developer</p>
             <ul class="list-inline social-buttons">
               <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/amargon/">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/joig-badge.png" alt="">
-            <h4>José Ignacio de la Vega</h4>
-            <p class="text-muted">Server Administrator</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/rub%C3%A9n-luque-289a08bb">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
@@ -274,46 +318,8 @@
           <p class="large">We help corporate, public and not-for-profit sectors to conceptualise blockchain solutions,
             to implement blockchain infrastructure, to develop smart contracts and distributed apps, and to boost
             community building.</p>
-          <p class="large">We think that our work speaks for itself, so let us introduce you to some of our most recent
-            creations:</p>
         </div>
       </div>
-
-      <br>
-      <div id="projects">
-        <div class="row text-center">
-          <div class="col-sm-2"></div>
-          <div class="col-sm-4">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-              <img src="./img/projects/logo-cartrustchain.png" alt="CarTrusChain" style="max-width:200px" />
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-              <img src="./img/projects/logo-liftsontheblock.png" alt="Lifts On The Block" style="max-width:200px" />
-            </a>
-          </div>
-          <div class="col-sm-2"></div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="row text-center">
-          <div class="col-sm-2"></div>
-          <div class="col-sm-4">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-              <img src="./img/projects/logo-rockmyblock.png" alt="Rock My Block" style="max-width:200px" />
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
-              <img src="./img/projects/logo-sensordapp.png" alt="SensorDapp" style="max-width:200px" />
-            </a>
-          </div>
-          <div class="col-sm-2"></div>
-        </div>
-      </div>
-
 
   </section>
 
@@ -398,85 +404,6 @@
 
 
   <!-- Portfolio Modals -->
-
-  <!-- Modal 0 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">The Teloscope: How to cast your vote</h2>
-                <p class="item-intro text-muted">Each user can vote for up to 30 candidates</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/aklvpurJVOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-                <div style="text-align:left">
-                  <br /><br />
-                  <p>These instructions are Ubuntu Linux OS based. Don’t worry if you don’t have Linux, the steps are
-                    basically the same.</p>
-                  <ol>
-                    <li>Go to <a href="http://google.com">http://google.com</a>, search for <em>"telos fundation sqrl"</em>
-                      and click on the <strong>Sqrl</strong> Github.</li>
-                    <li>Once you are in the Sqrl github, go to the releases tab and <strong>dowload</strong> it by
-                      clicking on:
-                      <ul>
-                        <li><code>linux-Sqrl-lastversion-amd64.deb</code> <small class="text-mutted">(To install on
-                            your Ubuntu/Debian Linux OS)</small></li>
-                        <li><code>linux-Sqrl-lastversion-x86_64.AppImage</code> <small class="text-mutted">(If you want
-                            a portable Linux version)</small></li>
-                        <li><code>mac-Sqrl-lastversion.dmg</code> <small class="text-mutted">(If you are using MacOS)</small></li>
-                        <li><code>win-Sqrl-lastversion.exe</code> <small class="text-mutted">(If you are using Windows)</small></li>
-                      </ul>
-                    </li>
-                    <li>When your download is finished go to your Downloads folder and click on the file to install it.</li>
-                    <li>Once the package manager window is open, you only need to click on the <em>Install package</em>
-                      button. Linux is going to request your sudo password, needed to install the package. When the
-                      installation finished, open the app.</li>
-                    <li>The first window that you are going to see, is the one requesting you to select which network
-                      to connect the wallet app to. In our case we are going to select <em>Telos Testnet</em> on the
-                      dropdown
-                      menu. Then connect the wallet to the network by clicking on the <em>Connect to Server</em>
-                      button.</li>
-                    <li>When Sqrl connects to the network, the next step is importing your account, so click on the
-                      <em>Import Existing Account</em> button. The app will request your public key (or username) and
-                      your
-                      private key (active key in this case), so first copy&paste your public key and click on <em>Lookup
-                        Account</em>. Then copy&paste your account active key on the text box and click on <em>Compare
-                        keys</em>
-                      button.</li>
-                    <li>Once the app checks your credentials, you must type a local password for securing the wallet on
-                      your device. When you are finished typing the password, click on the <em>Save Account</em> button
-                      and
-                      re-enter the same password for verification purposes. Then click on the <em>Save Local Wallet</em>
-                      button.</li>
-                    <li>Read and accept Sqrl terms and conditions and go to the <em>Wallet</em> tab. Then click on <em>Update
-                        Staked TLOS</em>. In order to vote you need to stake your TLOS either on CPU and/or Bandwidth,
-                      so
-                      split them as you want. Then click on the <em>Update Staked Balances</em> button and confirm.</li>
-                    <li>Once the transaction is submitted you can go to the Governance tab and vote with your recently
-                      staked TLOS. Type <em>theteloscope</em> in the search box and click on vote button (We strongly
-                      encourage you to select another 29 block producers to maximize your voting power). Then click on
-                      <em>Submit votes for selected producers</em> on the left side of the window. Then click on <em>Submit
-                        Votes</em> button. When the transaction is submitted your votes are cast.</li>
-                  </ol>
-                </div>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -617,151 +544,72 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-10 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Observing Logs</h2>
-                <p class="item-intro text-muted">Discover and Learn about Telos.</p>
-                <p>In this section you can read our articles and tutorials about Telos and blockchain.</p>
-                <p><a href="https://medium.com/@theteloscope">The Teloscope on Medium</a></p>
-                <a class="medium-link" href="https://medium.com/@theteloscope/the-teloscope-weekly-743e4a03e391">
-                  <section class="medium-article">
-                    <figure>
-                      <img alt="" src="https://miro.medium.com/fit/c/512/154/0*5iA4bsys3EFBu9Sx" class="l m n dy g"
-                        width="256" height="77">
-                    </figure>
-                    <h3>The Teloscope Weekly</h3>
-                  </section>
-                </a>
-                <a class="medium-link" href="https://medium.com/@theteloscope/the-sensordapp-tutorial-687a6bd76a09">
-                  <section class="medium-article">
-                    <figure>
-                      <img alt="" src="https://miro.medium.com/fit/c/800/240/1*cCeeIosoBM9UI5AyArOkJQ.png" class="l m n dy g"
-                        width="400" height="120">
-                    </figure>
-                    <h3>The SensorDApp Tutorial</h3>
-                    <p>The Teloscope team believes in the importance of producing DApps’ development tutorials in order
-                      to spur coding…</p>
-                  </section>
-                </a>
-                <a class="medium-link" href="https://medium.com/@theteloscope/your-guide-to-telos-community-abbreviations-and-acronyms-f8141575b630">
-                  <section class="medium-article">
-                    <figure>
-                      <img alt="" src="https://miro.medium.com/fit/c/1400/420/1*7T9tiSqaiq5nGJMx6jwl3g.jpeg" class="l m n dy g"
-                        width="500" height="150">
-                    </figure>
-                    <h3>Your guide to Telos community abbreviations and acronyms</h3>
-                  </section>
-                </a>
-                <a class="medium-link" href="https://medium.com/@theteloscope/the-teloscope-telegram-bot-a-guide-for-beginners-2c96340a6dd">
-                  <section class="medium-article">
-                    <figure>
-                      <img alt="" src="https://miro.medium.com/fit/c/900/270/0*Xwk9ELtJGHvhDXEP" class="l m n dy g"
-                        width="450" height="135">
-                    </figure>
-                    <h3>The Teloscope Telegram Bot: A Guide for Beginners</h3>
-                    <p>What is The Teloscope Bot?</p>
-                  </section>
-                </a>
-                <a class="medium-link" href="https://medium.com/@theteloscope/your-tlos-matter-how-to-access-your-tokens-and-vote-for-block-producers-35c15102159f">
-                  <section class="medium-article">
-                    <figure>
-                      <img alt="" src="https://miro.medium.com/fit/c/512/154/0*5iA4bsys3EFBu9Sx" class="l m n dy g"
-                        width="256" height="77">
-                    </figure>
-                    <h3>Your TLOS matter: How to access your tokens and vote for Block Producers</h3>
-                  </section>
-                </a>
-                <a class="medium-link" href="https://medium.com/@theteloscope/validation-report-for-telos-mainnet-9fdf5ffc52de">
-                  <section class="medium-article">
-                    <h3>Validation Report for Telos Mainnet</h3>
-                    <p>The Teloscope, a Telos BP candidate (non-TLG), has undertaken the relevant task of
-                      collaborate in validating the Telos Mainnet launch. For this purpose we have run several tests
-                      and, for maximum transparency, we share here our findings with the community. We’ve run…</p>
-                  </section>
-                </a>
-                <a class="medium-link" href="https://medium.com/@theteloscope/who-we-are-8e80f48bb3d6">
-                  <section class="medium-article">
-                    <figure>
-                      <img alt="" src="https://miro.medium.com/fit/c/1400/420/1*KU8L0RukhErsv3_eGWNa0Q.jpeg" class="l m n dy g"
-                        width="500" height="150">
-                    </figure>
-                    <h3>Who we are</h3>
-                    <p>Our previous work serves as a guideline of what can we offer to the Telos community</p>
-                  </section>
-                </a>
-                <a class="medium-link" href="https://medium.com/@theteloscope/why-telos-cope-fbbc8651d334">
-                  <section class="medium-article">
-                    <figure>
-                      <img alt="" src="https://miro.medium.com/freeze/fit/c/1000/300/0*GWSYiH475OY_Z6jQ.gif" class="l m n dx g"
-                        width="500" height="150">
-                    </figure>
-                    <h3>Why Telos(cope)?</h3>
-                    <p>In this article we will give you a glimpse into who we
-                      are and the reason to launch…</p>
-                  </section>
-                </a>
-                <div style="margin-top:50px"></div>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                <h2 class="text-uppercase">Tools & Projects</h2>
+                <p class="item-intro text-muted">Discover Our Work.</p>
+                <p>We think that our work speaks for itself, so let us introduce you to some of our most recent
+                  creations:</p>
 
-  <!-- Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Camera</h2>
-                <p class="item-intro text-muted">Watch our Short Videos.</p>
-                <p>In this section you can see a list of our videos.</p>
-                <p><a href="https://www.youtube.com/channel/UCQO901djDCBHGPaMg5mrnWQ">The Teloscope on Youtube</a></p>
-
-                <div style="margin:30px auto;">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/aklvpurJVOM" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3 class="text-uppercase">Chainspector</h3>
+                <p class="item-intro text-muted">The Swiss Army Knife of Telos</p>
+                <p>This web application sumarizes several live informations about the Telos Blockchain network.
+                  Although raw data is public, giving it a meaninful sense can be difficult for non technical users. It
+                  can even be tedious for people using a block explorer. Unlike a block explorer, Chainspector offers a
+                  set of tools that present useful information so the user can play with it.</p>
+                <p>On its very first version, the application offers four sets of tools. But with your feedback we
+                  expect to add many more. Future development of chainspector will align with what the community needs.
+                  You can shape our development!</p>
+                <p>In Medium you can read an <a href="https://medium.com/@theteloscope/getting-started-with-chainspector-336cfaa4358d">introductory
+                    article about Chainspector</a>.</p>
+                <div style="margin:30px auto">
+                  <img style="margin-bottom: 5px" src="https://chainspector.io/images/about_generalinfo.png" alt="Chainspector"
+                    width="300">
+                  <div style="text-align: center; margin-bottom: 30px"><a href="https://chainspector.io">Chainspector</a>.</div>
                 </div>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">CarTrustChain</h2>
+                <h3 class="text-uppercase">The Teloscope Bot</h3>
+                <p class="item-intro text-muted">The Telegram Bot</p>
+                <p>The Teloscope Bot is a third-party application that runs inside the messaging app Telegram. Users
+                  can interact with The Teloscope Bot by sending messages and commands to it by opening a chat with it.</p>
+                <p>Here is a list of the bot’s main features:</p>
+                <ul>
+                  <li>Get information about Telos accounts: display stats about CPU, NET, and RAM resources, total
+                    balance, votes cast and inclusion in snapshots.</li>
+                  <li>Monitor accounts and premium names: subscribe to real-time notifications and set a threshold to
+                    filter out irrelevant Tx.</li>
+                  <li>Check TLOS exchange rate in EOS and US dollar, or use the TLOS to USD converter.</li>
+                  <li>Know current RAM price on Telos Mainnet in TLOS/KB</li>
+                  <li>Create a new Telos account for free.</li>
+                </ul>
+                <p>You can read the <a href="https://medium.com/@theteloscope/the-teloscope-telegram-bot-a-guide-for-beginners-2c96340a6dd">Teloscope
+                    Bot guide on Medium</a>.</p>
+                <div style="margin:30px auto">
+                  <img style="margin-bottom: 5px" src="https://cdn-images-1.medium.com/max/1200/1*oDmZyifyFRVWquKYCD2S0A.jpeg"
+                    alt="The Teloscope Bot" width="300">
+                  <div style="text-align: center; margin-bottom: 30px">You can access The Teloscope Bot at <a href="https://t.me/TeloscopeBot">https://t.me/TeloscopeBot</a>.</div>
+                </div>
+
+                <h3 class="text-uppercase">Sensor DApp</h3>
+                <p class="item-intro text-muted">Telos DApp for IOT</p>
+                <p>This is a demo application of Sensor DApp. The chart displays sensor data uploaded to the Telos
+                  Blockchain from a light app running on a Raspberry Pi equipped with some external sensors. You can
+                  adjust some parameters to choose different sensor data or time scale.</p>
+                <p><strong>Goals:</strong> Faithful monitoring of parameters (temperature, humidity ...) for logistics
+                  or other areas.
+                  <br><strong>Solution:</strong> Real-time sensor registration application in blockchain.
+                  <br><strong>Beneficiaries:</strong> Agrifood, pharmaceutical traceability, etc.</p>
+                <p>You can read the DApp development <a href="https://medium.com/@theteloscope/the-sensordapp-tutorial-687a6bd76a09"
+                    target="_blank" title="Open in new tab">tutorial on Medium</a>.</p>
+                <div style="margin:30px auto">
+                  <img style="margin-bottom: 5px" src="sensordapp/img/richpreview-graph.png" alt="Sensor DApp" width="300">
+                  <div style="text-align: center; margin-bottom: 30px"><a href="https://theteloscope.io/sensordapp/">SensorDapp</a>.</div>
+                </div>
+
+                <hr />
+
+                <h3 class="text-uppercase">CarTrustChain</h3>
                 <p class="item-intro text-muted">Registration and control of data related with the lifecycle of
                   vehicles.</p>
                 <p>In this project we have developed an application, CarTrustChain, which store relevant information
@@ -777,32 +625,8 @@
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/kh_iyGQtyhQ" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">LiftsOnTheBlock</h2>
+                <h3 class="text-uppercase">LiftsOnTheBlock</h3>
                 <p class="item-intro text-muted">IoT implementations for the automated maintenance of machinery.</p>
                 <p>In this project we have developed a system based in a blockchain that registers most usual
                   incidences that can happen to an elevator, such as broken cabin light, elevator overload, doors not
@@ -814,32 +638,8 @@
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/zVCms_ZeVFM" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">RockMyBlock</h2>
+                <h3 class="text-uppercase">RockMyBlock</h3>
                 <p class="item-intro text-muted">Blockchain-based ticketing platform.</p>
                 <p>In this project we have developed a blockchain-based ticketing platform for the management of
                   e-tickets that ensures security and flexibility while minimising the possibility of counterfeit
@@ -849,45 +649,8 @@
                   profit-sharing rules.</p>
                 <div style="margin:30px auto">
                 </div>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fas fa-times"></i>
-                  Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Modal 7 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Sensor DApp</h2>
-                <p class="item-intro text-muted">Telos DApp for IOT</p>
-                <p>This is a demo application of Sensor DApp. The chart displays sensor data uploaded to the Telos
-                  Blockchain from a light app running on a Raspberry Pi equipped with some external sensors. You can
-                  adjust some parameters to choose different sensor data or time scale.</p>
-                <p><strong>Goals:</strong> Faithful monitoring of parameters (temperature, humidity ...) for logistics
-                  or other areas.
-                  <br><strong>Solution:</strong> Real-time sensor registration application in blockchain.
-                  <br><strong>Beneficiaries:</strong> Agrifood, pharmaceutical traceability, etc.</p>
-                <p>You can read the DApp development <a href="https://medium.com/@theteloscope/the-sensordapp-tutorial-687a6bd76a09"
-                    target="_blank" title="Open in new tab">tutorial on Medium</a>.</p>
-                <div style="margin:30px auto">
-                  <img src="sensordapp/img/richpreview-graph.png" alt="Sensor DApp" width="300">
-                </div>
+                <div style="margin-top:50px"></div>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Close</button>
