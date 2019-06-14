@@ -1,0 +1,246 @@
+<!-- 
+    Based on a script by David Neuy 'http://www.home-automation-community.com/' 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Demo application of Sensor ÐApp. The chart displays sensor data uploaded to the Telos Blockchain."
+    />
+    <meta name="author" content="The Teloscope" />
+    <meta property="og:title" content="Sensor DApp" />
+    <meta
+      property="og:description"
+      content="Demo application of Sensor ÐApp. The chart displays sensor data uploaded to the Telos Blockchain."
+    />
+    <meta property="og:image" content="img/richpreview-logo.png" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>Decibelathor</title>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.0.1/spin.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/eosjs@16.0.6/lib/eos.min.js"
+      integrity="sha512-IS9vyI+sMK7MYNJgHj9G8Li21QYs59sRW/Nyzi+dKUh6bF6OfpOnvzSCTiegWftY1ozOmmyacCH2QIJpZgbuKw=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- D3 CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.6/nv.d3.min.css"
+    />
+    <!-- jQueryUI CSS
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css"> -->
+    <!-- Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 4 CSS-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- Custom styles -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main role="main">
+      <nav class="navbar navbar-expand-sm navbar-custom">
+        <div class="container">
+          <h1>
+            <img
+              id="logo-sensordapp"
+              src="img/logo-sensordapp.png"
+              alt="SensorDapp"
+            />
+          </h1>
+          <a target="_blank" href="https://www.fundacionctic.org/en"
+          ><img
+            class="logo-ctic"
+            src="https://www.fundacionctic.org/sites/default/files/LOGOCTICSOLO.png"
+            alt="CTIC"
+        /></a>
+        </div>
+        
+      </nav>
+
+      <div class="jumbotron">
+        <div class="container">
+          <div class="">
+            <p>
+              The chart below displays data (Noise level in dB's) uploaded to
+              the Telos Blockchain by a Raspberry Pi with a sound detector. You
+              can see the measures in <strong>real time</strong> thanks to the
+              scalability of the Telos Blockchain, and with no transactions
+              fees. Just record your voice or your claps into the blockchain
+              forever. <br />You can read the DApp development
+              <a
+                target="_blank"
+                title="Open in new window"
+                href="https://medium.com/@theteloscope/the-sensordapp-tutorial-687a6bd76a09"
+                >tutorial on Medium</a
+              >.
+            </p>
+          </div>
+          <fieldset class="form-group">
+            <legend>Contract Data Query</legend>
+            <div class="row">
+              <div class="col-md-11">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="account">Telos Account</label>
+                      <input
+                        disabled="disabled"
+                        type="text"
+                        class="form-control"
+                        name="account"
+                        id="account"
+                        value="decibelathor"
+                        size="12"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="sensor_id">Sensor ID</label>
+                      <input
+                        disabled="disabled"
+                        type="number"
+                        class="form-control"
+                        name="sensor_id"
+                        id="sensor_id"
+                        value="1"
+                        min="1"
+                      />
+                    </div>
+                  </div>
+                  <!-- <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="sample_window">Sample Window</label>
+                    <input disabled="disabled" type="number" class="form-control" name="sample_window" id="sample_window" value="1000" min="1">
+                  </div>
+                </div> -->
+                </div>
+              </div>
+              <!-- <div class="col-md-1">
+              <div class="form-group">
+                <span style="display: inline-block; margin-bottom: .5rem;">&nbsp;</span>
+                <button id="refresh_historical_btn" class="btn btn-primary" role="button" style="display:block">
+                  Apply
+                </button>
+              </div>
+            </div> -->
+            </div>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="chart">
+              <div
+                id="chart_title"
+                style="text-align: center; font-style: italic;"
+              ></div>
+              <style>
+                .nvd3.multiChart .axis .nv-axis line {
+                  stroke: none;
+                  fill: none;
+                }
+              </style>
+              <svg style="height:500px"></svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="clearfix" id="chart-config-params">
+          <div class="float-right" style="padding-right: 70px">
+            <div class="form-group">
+              <table>
+                <tr>
+                  <td>
+                    <label for="samples">Time Window</label>
+                  </td>
+                  <td>
+                    <select
+                      disabled="disabled"
+                      class="form-control"
+                      name="samples"
+                      id="samples"
+                      onChange="refreshChart()"
+                    >
+                      <option value="600">Real time</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="description">
+          <div class="card-header" id="parameters">
+            Sensor Dapp Parameters
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12">
+                <dl>
+                  <dt>Telos Account</dt>
+                  <dd>
+                    The user account on the Telos blockchain the desired sensor
+                    data is registered to. For demo purposes use the provided
+                    account (sensorsmesh1)
+                  </dd>
+                  <dt>Sensor ID</dt>
+                  <dd>
+                    Each sensor cluster is tied to a registered ID. You can find
+                    sample demo data on ID 1 for the default user account
+                  </dd>
+                  <!-- <dt>Sample Window</dt>
+                <dd>This application relies on the history capabilities of some Telos nodes and so this parameter
+                  indicates
+                  how many actions into the past will be requested from the node. Since the number of data points and
+                  sensors are not known prior to the history retrieval you may have to adjust this parameter to achieve
+                  the
+                  desired time resolution.</dd> -->
+                  <dt>Time Window</dt>
+                  <dd>
+                    Plot only data samples with timestamps in the selected time
+                    frame.
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+      </div>
+      <!-- /container -->
+    </main>
+
+    <footer class="container">
+      <p>&copy; The Teloscope 2019</p>
+    </footer>
+
+    <script src="sensordapp.js"></script>
+  </body>
+</html>
