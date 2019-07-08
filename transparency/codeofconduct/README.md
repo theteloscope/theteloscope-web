@@ -33,4 +33,4 @@ We don't believe in housing our servers elsewhere, as it can lead to inefficienc
 ## No Diversification
 There should be no diversification in block producing activities aimed at operating simultaneously several BPs, either in the same mainnet, or across different mainnets of any other EOS-derived blockchain platforms.
 
-We are fully committed to Telos platform. As long as we operate a BP in Telos we will not set up and/or operate a BP in EOS or any other sister/derived chain.
+We are fully committed to Telos platform. As long as we operate a BP in Telos we will not set up and/or operate a BP in any other EOS sister/derived chain.
